@@ -97,7 +97,7 @@ exports.animeByGenre = async function (req, res) {
                 data: data
             })
         }
-    }).skip(page * perPage).limit(perPage)
+    }).skip(page * perPage).limit(perPage).sort({ title: 1 })
 }
 
 exports.animeBySeason = function (req, res) {
@@ -118,7 +118,7 @@ exports.animeBySeason = function (req, res) {
                 data: data
             })
         }
-    }).skip(page * perPage).limit(perPage)
+    }).skip(page * perPage).limit(perPage).sort({ title: 1 })
 }
 
 exports.showGenres = function (req, res) {
