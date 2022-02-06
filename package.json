@@ -1,0 +1,33 @@
+{
+  "name": "muse-api",
+  "version": "1.0.0",
+  "description": "Unofficial API of Muse Indonesia youtube content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ".\\node_modules\\.bin\\nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZamIzzudin/Muse-API.git"
+  },
+  "keywords": [
+    "Muse",
+    "MuseId",
+    "Anime",
+    "API"
+  ],
+  "author": "ZamIzzudin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZamIzzudin/Muse-API/issues"
+  },
+  "homepage": "https://github.com/ZamIzzudin/Muse-API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "helmet": "^5.0.2",
+    "mongoose": "^6.2.0",
+    "nodemon": "^2.0.15"
+  }
+}
