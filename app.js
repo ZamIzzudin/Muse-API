@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 
 // Database Connection
-mongoose.connect('Your DB Here')
+mongoose.connect('mongodb+srv://Gollum:syahid11@clustinian.kf1w4.mongodb.net/MuseDB?retryWrites=true&w=majority')
 // mongoose.connect('mongodb://localhost/MuseDB')
 .then( () => { console.log('connection successfully') })
 .catch( err => console.log(err) );
