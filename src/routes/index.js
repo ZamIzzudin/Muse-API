@@ -3,6 +3,21 @@ const express = require('express');
 const router = express.Router();
 
 // Controllers
+const gandalf = require('../controllers/gandalfController');
+
+// Add Anime 
+router.route('/GandalfAccess/addAnime')
+    .post(gandalf.add)
+
+// Add Episode
+router.route('/GandalfAccess/addEpisode/')
+    .post(gandalf.addEpisode)
+
+// Edit Anime and Delete
+router.route('/GandalfAccess/editAnime/:q_kode')
+    .patch(gandalf.editAnime)
+    .put(gandalf.editAnime)
+    .delete(gandalf.deleteAnime)
 
 const anime = require('../controllers/animeController');
 
