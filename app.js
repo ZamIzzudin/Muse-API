@@ -6,7 +6,7 @@ const bodyParser = require('express')
 const helmet = require('helmet');
 
 // Setup Router
-const router = require('./src/routes');
+import router from './src/routes/index.js'
 
 const app = express();
 const port = process.env.PORT || 8000
